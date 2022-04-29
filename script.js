@@ -2,11 +2,6 @@
 
 // Flexbox, CSS Grid, or Bootstrap
 
-// 1. Navbar
-    // Contains a logo (use a dummy logo or create your own) !! yuppers
-    // Links to Home, Resume, Gallery, and Contact (doesn't need to be functional) !! correct!
-    // All items should be well spaced and organized on the left-hand side of the page ---- REVISIT THIS!
-
 // 2. A full-width panel with two columns containing the following:
     // Add a background color of choice
     // Column 1

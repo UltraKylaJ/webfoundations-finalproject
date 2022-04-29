@@ -1,46 +1,14 @@
-.navBar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-}
-
 .resizeK {
     width: 75px;
     height: 75px;
 }
 
-.home {
-    background-color: #32746D;
-    border: 1px solid black;
-    height: 20px;
-    width: 100px;
-    text-align: center;
-    color: white;
+.container {
+    background-color: #C4E7D4;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
 }
 
-.resume {
-    background-color: #32746D;
-    border: 1px solid black;
-    height: 20px;
-    width: 100px;
-    text-align: center;
-    color: white;
-}
-
-.gallery {
-    background-color: #32746D;
-    border: 1px solid black;
-    height: 20px;
-    width: 100px;
-    text-align: center;
-    color: white;
-}
-
-.contact {
-    background-color: #32746D;
-    border: 1px solid black;
-    height: 20px;
-    width: 100px;
-    text-align: center;
-    color: white;
+html, body {
+    background-color: #DBB3B1;
 }
