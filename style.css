@@ -4,6 +4,11 @@
     justify-content: left;
 }
 
+.resizeK {
+    width: 75px;
+    height: 75px;
+}
+
 .home {
     background-color: #32746D;
     border: 1px solid black;
