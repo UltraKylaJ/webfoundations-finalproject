@@ -1,0 +1,41 @@
+.navBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.home {
+    background-color: #32746D;
+    border: 1px solid black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+.resume {
+    background-color: #32746D;
+    border: 1px solid black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+.gallery {
+    background-color: #32746D;
+    border: 1px solid black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+.contact {
+    background-color: #32746D;
+    border: 1px solid black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
