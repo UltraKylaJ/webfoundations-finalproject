@@ -1,23 +1,54 @@
 //Lord Jesus, I pray that I can complete this project in a timely manner. I pray that I understand it and that what I don't understand I will receive help to understand. Please continue to give me the excitement I have been receiving from learning in this program. Thank you for all you have blessed me with and will continue to bless me with.
 
-// Flexbox, CSS Grid, or Bootstrap
+var textIncrease = document.getElementById("hover");
+textIncrease.addEventListener("mouseenter", func, false);
+textIncrease.addEventListener("mouseleave", func2, false);
 
-// 2. A full-width panel with two columns containing the following:
-    // Add a background color of choice
-    // Column 1
-        // Your full name (or a fake name of choice)
-        // Title or Aspiring Tile
-        // A brief description
-        // !!!!!!! Use DOM methods to create a hover effect to increase the size of the name and title elements
-    // Column 2
-        // An image of yourself or a placeholder image
+function func() {  
+   textIncrease.setAttribute("style", "font-size: 36px;")
+}
+function func2() {  
+    textIncrease.setAttribute("style", "font-size: 24px;")
+}
 
-// 3. A full-width panel containing three columns and the following:
-    // Column 1: Technical Skills (List at least 3 items)
-    // Column 2: Soft Skills (at least 4 items)
-    // Column 3: Hobbies (at least 3 items)
-    // Add a border of choice to each list
-    // Add effects to each column to have a background color change when hovered over
+
+// $.ajax('https://api.adviceslip.com/advice', 
+//     {
+//         success: function (APIResponse) {
+//             // Creating a div element
+//             let myDiv = document.createElement('div');
+
+//             // Creating a paragraph element and adding the innerHTML
+//             let headerTag = document.createElement('p');
+//             headerTag.innerHTML = "Advice of the Day"
+
+//             // Creating another paragraph element and adding the innerHTML
+//             let adviceTag = document.createElement('p');
+//             adviceTag.innerHTML = APIResponse.participants;
+
+//             // Appending the paragraph tags to the created div element
+//             myDiv.appendChild(headerTag);
+//             myDiv.appendChild(adviceTag);
+
+//             document.body.appendChild(myDiv);
+//         }
+//     })
+    function getAdvice() {
+        $.ajax(
+            'https://api.adviceslip.com/advice',
+            {
+                success: function (APIResponse) {
+                    console.log(APIResponse);
+                    let advice = JSON.parse(APIResponse);
+                    console.log(advice);
+                    let dailyAdvice = document.createElement('p');
+                    dailyAdvice.innerHTML = advice.slip.advice;
+                    document.getElementById("adviceAPI").appendChild(dailyAdvice);
+                }
+            }
+        )
+    }
+    //document.getElementById("myList").appendChild(node);
 
 // 4. A full-width panel with the following:
     // Using AJAX in JavaScript, fetch data from https://api.adviceslip.com/advice and display 

@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         
@@ -34,25 +35,20 @@
               </div>
             </div>
         </nav>
-        <!-- // 2. A full-width panel with two columns containing the following:
-        // Add a background color of choice
-        // Column 1
-            // Your full name (or a fake name of choice)
-            // Title or Aspiring Tile
-            // A brief description
-            // Use DOM methods to create a hover effect to increase the size of the name and title elements
-        // Column 2
-            // An image of yourself or a placeholder image -->
+        
         <div class="container">
             <div class="row">
                 <div class="col-6">
                     <div class="row">
-                        <div class="name">
-                            <p>Kyla Joiner</p>
+                        <div id="hover">
+                            <div class="name">
+                                <p>Kyla Joiner</p>
+                            </div>
+                            <div class="aspiring">
+                                <p>Adventurous Website Developer</p>
+                            </div>
                         </div>
-                        <div class="aspiring">
-                            <p>Adventurous Website Developer</p>
-                        </div>
+                        <hr>
                         <div class="description">
                             <p>Hi, I'm Kyla and I'm a funny adventurer. I'm a project team leader at 
                                 Natural State of Disquietude Technologies.
@@ -61,9 +57,6 @@
                                 others smile. I'm actively growing and learning more about technology 
                                 and the world around me.
                             </p>
-                        </div>
-                        <div class="DOM">
-                            <p>DOM methods to create hover effect to increase the size of the name & title elements</p>
                         </div>
                     </div>
                 </div>
@@ -75,15 +68,38 @@
             </div>
         </div>
         
+        <!--
+        // Add a border of choice to each list
+        // Add effects to each column to have a background color change when hovered over
+     -->
 
-        <div class="container">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+        <div class="container-fluid text-center">
+            <div class="row justify-content-around">
+                <div class="skills col-3">
+                    <h4>Technical Skills</h4>
+                    <li class="list-group-item">HTML, CSS, JS</li>
+                    <li class="list-group-item">Bootstrap and Flexbox</li>
+                    <li class="list-group-item">AJAX and jQuery</li>
+                </div>
+                <div class="skills col-3">
+                    <h4>Soft Skills</h4>
+                    <li class="list-group-item">Effective Communication</li>
+                    <li class="list-group-item">Work Ethic</li>
+                    <li class="list-group-item">Time Management</li>
+                    <li class="list-group-item">Interpersonal Skill</li>
+                </div>
+                <div class="skills col-3">
+                    <h4>Hobbies</h4>
+                    <li class="list-group-item">Ultimate Frisbee</li>
+                    <li class="list-group-item">Paiting</li>
+                    <li class="list-group-item">Cooking</li>
+                </div>
+            </div>
         </div>
-
-        <div class="panel3">
-            <div>Fetch Data</div>
+        <hr>
+        <div id="adviceAPI" onload="getAdvice()">
+            <h3>Advice of the Day</h3>
+            
         </div>
 
         <script src="script.js"></script> 
