@@ -8,7 +8,7 @@
         // Your full name (or a fake name of choice)
         // Title or Aspiring Tile
         // A brief description
-        // Use DOM methods to create a hover effect to increase the size of the name and title elements
+        // !!!!!!! Use DOM methods to create a hover effect to increase the size of the name and title elements
     // Column 2
         // An image of yourself or a placeholder image
 
