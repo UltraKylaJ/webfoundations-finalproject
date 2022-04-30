@@ -17,20 +17,15 @@ function getJoke() {
         {
             success: function (APIResponse) {
                 console.log(APIResponse);
+                
                 let advice = JSON.parse(APIResponse);
                 console.log(advice);
                 let dailyAdvice = document.createElement('p');
                 dailyAdvice.innerHTML = advice.slip.advice;
-                document.body.appendChild(dailyAdvice);
+                document.getElementById('advice').appendChild(dailyAdvice);
             }
         }
     )
 }
 getJoke()
-    //document.getElementById("myList").appendChild(node);
 
-// 4. A full-width panel with the following:
-    // Using AJAX in JavaScript, fetch data from https://api.adviceslip.com/advice and display 
-    // the Random Advice dynamically within the HTML page (https://api.adviceslip.com/)
-
-// 5. A footer with your GitHub link
