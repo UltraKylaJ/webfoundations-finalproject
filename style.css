@@ -41,11 +41,21 @@ footer {
     padding: 50px;
 }
 
-.container-fluid {
-    
+.skills {
+    margin: 50px auto;
 }
 
-.list-group-item:hover {
+.techSkills:hover {
     background-color: #F7DAD9;
     border: 1px dotted black;
+}
+
+.softSkills:hover {
+    background-color: #E68B89;
+    border: 1px solid black;
+}
+
+.hobbies:hover {
+    background-color: #FBEEEE;
+    border: 2px double black;
 }
